@@ -1,0 +1,180 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="851.68">
+    <Grid x:Name="chooseGrid" Cursor="">
+
+        <Grid HorizontalAlignment="Left" Height="240" Margin="45,33,0,32" VerticalAlignment="Top" Width="702">
+            <Grid.RowDefinitions>
+                <!--定义Grid的行，定义8行-->
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Viewbox  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="ax" Content=" 加速度X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center">
+                <Label x:Name="ay" Content=" 加速度Y" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center">
+                <Label x:Name="az" Content=" 加速度Y" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center">
+                <Label x:Name="tx" Content="陀螺仪X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center">
+                <Label x:Name="ty" Content=" 陀螺仪Y" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="0" Grid.Column="6" HorizontalAlignment="Center">
+                <Label x:Name="tz" Content=" 陀螺仪Z" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            
+            <Viewbox  Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center">
+                <CheckBox x:Name="cxd" Content="测斜D " HorizontalAlignment="Center" VerticalAlignment="Center" Checked="cxDchecked" Unchecked="cxDunchecked"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center">
+                <CheckBox  x:Name="cxa" Content="测斜A  " HorizontalAlignment="Center" VerticalAlignment="Center" Checked="cxAchecked" Unchecked="cxAunchecked"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center">
+                <CheckBox x:Name="cxb" Content="测斜B  " HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.021,6.703" Checked="cxBchecked" Unchecked="cxBunchecked"/>
+            </Viewbox>
+
+
+            <Viewbox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center">
+                <Label  x:Name="Ccaax" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center">
+                <Label  x:Name="Ccaay" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center">
+                <Label  x:Name="Ccaaz" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center">
+                <Label  x:Name="Ccatx" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center">
+                <Label  x:Name="Ccaty" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="6" HorizontalAlignment="Center">
+                <Label  x:Name="Ccatz" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            
+                      
+            <Viewbox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="Ccbax" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center">
+                <Label x:Name="Ccbay" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center">
+                <Label x:Name="Ccbaz" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center">
+                <Label x:Name="Ccbtx" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2" Grid.Column="5" HorizontalAlignment="Center">
+                <Label x:Name="Ccbty" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2" Grid.Column="6" HorizontalAlignment="Center">
+                <Label x:Name="Ccbtz" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+
+
+            <Viewbox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="Ccdax" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center">
+                <Label x:Name="Ccday" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center">
+                <Label x:Name="Ccdaz" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center">
+                <Label x:Name="Ccdtx" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="3" Grid.Column="5" HorizontalAlignment="Center">
+                <Label x:Name="Ccdty" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="3" Grid.Column="6" HorizontalAlignment="Center">
+                <Label x:Name="Ccdtz" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="220" Margin="40,0,0,60" VerticalAlignment="Bottom" Width="402">
+            <Grid.RowDefinitions>
+                <!--定义Grid的行，定义8行-->
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Viewbox Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left">
+                <CheckBox x:Name="syj" Content="渗压计 " HorizontalAlignment="Left" VerticalAlignment="Center" Checked="syjchecked" Unchecked="syjunchecked"/>
+            </Viewbox>
+            <Viewbox Grid.Row="5" Grid.Column="0" HorizontalAlignment="Left">
+                <CheckBox x:Name="ywj" Content="液位计 " HorizontalAlignment="Left" VerticalAlignment="Center" Checked="ywjchecked" Unchecked="ywjunchecked"/>
+            </Viewbox>
+            <Viewbox Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left">
+                <CheckBox x:Name="cja" Content="沉降A " HorizontalAlignment="Left" VerticalAlignment="Center" Checked="cjAchecked" Unchecked="cjAunchecked"/>
+            </Viewbox>
+
+            <Viewbox Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left">
+                <CheckBox x:Name="cjb" Content="沉降B  " HorizontalAlignment="Left" VerticalAlignment="Center" Unchecked="cjBunchecked" Checked="cjBchecked"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left">
+                <CheckBox x:Name="yl" Content="雨量   " HorizontalAlignment="Left" VerticalAlignment="Center" Checked="ylchecked" Unchecked="ylunchecked"/>
+            </Viewbox>
+            <Viewbox Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left">
+                <CheckBox x:Name="csyw" Content="超声液位" HorizontalAlignment="Left" VerticalAlignment="Center" Unchecked="ywunchecked" Checked="ywchecked"/>
+            </Viewbox>
+            <Viewbox Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="Csyj" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="Cywj" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="Ccja" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="Ccjb" Content="  " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="Cyl" Content="   " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Viewbox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center">
+                <Label x:Name="Ccsyw" Content="" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+        </Grid>
+        <Label x:Name="deviceIdlabel" Content="0000000" HorizontalAlignment="Left" Height="38" Margin="447,356,0,0" VerticalAlignment="Top" Width="344" FontSize="20"/>
+        <Button x:Name="button" Content="提交设置" HorizontalAlignment="Left" Height="68" Margin="584,489,0,0" VerticalAlignment="Top" Width="236" FontSize="36" Click="submitConfig"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="36" Margin="447,303,0,0" TextWrapping="Wrap" Text="设备地址：" VerticalAlignment="Top" Width="291" FontSize="24"/>
+        <Label x:Name="update" Content="上传间隔：" HorizontalAlignment="Left" Margin="447,414,0,0" VerticalAlignment="Top" Width="149" FontSize="24"/>
+        <TextBox x:Name="updataValue"   HorizontalAlignment="Left" Height="40" Margin="613,414,0,0" VerticalAlignment="Top" Width="125" FontSize="24" Text="30"/>
+        <Label x:Name="label" Content="分钟" HorizontalAlignment="Left" Height="40" Margin="752,414,0,0" VerticalAlignment="Top" Width="68" FontSize="18"/>
+    </Grid>
+</Window>
